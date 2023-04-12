@@ -1,0 +1,317 @@
+/* 1344px */
+@media (max-width: 84em) {
+    .hero {
+        max-width: 120rem;
+    }
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* 1200px */
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+        /* 9px/16px */
+    }
+    .heading-tertiary {
+        font-size: 2.4rem;
+    }
+    .heading-secondary {
+        font-size: 3.6rem;
+    }
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+    .header {
+        padding: 0 3.2rem;
+    }
+    .hero {
+        gap: 4.8rem;
+    }
+    .main-nav-list {
+        gap: 3.2rem;
+    }
+    .testiomonial-container {
+        padding: 9.6rem 3.2rem;
+    }
+}
+/*944  */
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+        /* 8px/16px */
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 3.2rem;
+        gap: 6.4rem;
+    }
+    .hero-img {
+        width: 60%;
+    }
+    .hero-text-box,
+    .hero-img-box {
+        text-align: center;
+    }
+    .delivered-meals {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+    .logos img {
+        height: 2.4rem;
+    }
+    .step-number {
+        font-size: 7.4rem;
+    }
+
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem;
+    }
+    .section-testimonials {
+        grid-template-columns: 1fr;
+    }
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0.5rem;
+    }
+    .gallery--item {
+        height: 100%;
+    }
+    .cta {
+        grid-template-columns: 3fr 2fr;
+    }
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+    .btn--form {
+        margin-top: 2rem;
+    }
+    .btn-mob-nav {
+        display: block;
+        z-index: 88;
+    }
+    .main-nav {
+        background-color: rgb(255, 255, 255, 0.15);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* display:none-cannot be animated(transition) */
+        transition: all 0.5s ease-in;
+
+        /* visible */
+        opacity: 0;
+        /* for click */
+        pointer-events: none;
+        /* screen readeres */
+        visibility: hidden;
+    }
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav-open .icon-mob-nav[name="close-outline"] {
+        display: block;
+    }
+    .nav-open .icon-mob-nav[name="menu-outline"] {
+        display: none;
+    }
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+    }
+}
+/*704 */
+@media (max-width: 44em) {
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diets {
+        justify-self: center;
+        grid-column: 1/-1;
+    }
+    .heading-secondary {
+        font-size: 3.6rem;
+        margin-bottom: 4.8rem;
+    }
+
+    .pricing-plan {
+        justify-self: center;
+        width: 100%;
+    }
+    .gallery-item {
+        height: 10rem;
+        overflow: hidden;
+    }
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .nav-col {
+        grid-row: 1;
+        grid-column: span 2;
+        margin-bottom: 3.2rem;
+    }
+    .address-col,
+    .logo-col {
+        grid-column: span 3;
+    }
+}
+/* mobile */
+/*544*/
+@media (max-width: 34em) {
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+    .grid {
+        row-gap: 4.8rem;
+    }
+    .hero {
+        padding: 0 3.2rem;
+    }
+    .section-hero {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: 2.4rem 1.6rem;
+    }
+    .logos img {
+        height: 1.2rem;
+        padding: 0.1rem;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+    /* number of the child in the container */
+    .step-img-box:nth-child(2) {
+        grid-row: 1;
+    }
+    .step-img-box:nth-child(6) {
+        grid-row: 5;
+    }
+    .step-img-box {
+        transform: translateY(2.4rem);
+    }
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+    }
+    .cta {
+        grid-template-columns: 1fr;
+    }
+    .cta-img-box {
+        height: 32rem;
+        grid-row: 1;
+        background-size: cover;
+        background-position: 0 -6rem;
+    }
+    .cta-text-box {
+        padding: 3.2rem;
+    }
+    html {
+        font-size: 60%;
+        /* 8px/16px */
+    }
+    .section-how {
+        padding: 3.4rem 0;
+    }
+}
+/* mobile */
+/* 384 */
+
+@media (max-width: 24em) {
+    .section-hero {
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text-box {
+        justify-self: start;
+    }
+    .hero {
+        padding: 1rem;
+    }
+    .grid--footer {
+        column-gap: 1.5rem;
+        row-gap: 6rem;
+    }
+    .address-col,
+    .logo-col {
+        grid-column: span 6;
+    }
+    .logo-col {
+        grid-row: 4;
+        margin-top: -6rem;
+    }
+    .section-footer .container {
+        margin: -1rem;
+    }
+}
+/* safari flexbox gap */
+.no-flexbox-gap .main-nav-list li:not(:last-child){
+    margin-right: 4.8rem;
+}
+.no-flexbox-gap .list-item:not(:last-child){
+    margin-bottom: 1.6rem;
+}
+.no-flexbox-gap .list-icon:not(:last-child){
+    margin-right: 1.6rem;
+}
+.no-flexbox-gap .delivered-meals:not(:last-child){
+    margin-right: 1.6rem;
+}
+.no-flexbox-gap .meal-attribute:not(:last-child){
+    margin-bottom: 2rem;
+}
+.no-flexbox-gap .meal-icon{
+    margin-right: 1.6rem;
+}
+.no-flexbox-gap .footer-row div:not(:last-child){
+    margin-right: 6.4rem;
+}
+.no-flexbox-gap .social-links li:not(:last-child){
+    margin-right: 2.4rem;
+}
+.no-flexbox-gap .footer-nav li:not(:last-child){
+    margin-bottom: 2.4rem;
+}
+@media(max-width:75em){
+    .no-flexbox-gap .main-nav-list li:not(:last-child){
+        margin-right: 0rem;
+        margin-bottom: 4.8rem;
+    }
+}
+@media(max-width:59em){
+    .no-flexbox-gap .main-nav-list li:not(:last-child){
+        margin-right: 0rem;
+        margin-bottom: 4.8rem;
+    }
+}
